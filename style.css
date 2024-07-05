@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gugi", sans-serif;
+}
+
+
+nav{
+    background-color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    margin: 20px;
+    color: brown;
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+nav ul li a:hover{
+    text-shadow: 2px 6px 16px black;
+    color: blue;
+}
+
+video{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    top: 68%;
+    left: 70%;
+    color: rgb(155, 61, 176);
+}
+h1:hover{
+    text-shadow: 2px 4px 12px rgb(255, 0, 0);
+    text-decoration: underline;
+}
+ h2{
+    color: rgb(255, 220, 25);
+ }
+span{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+#home
+{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+#home::before{
+    content: "";
+    background-image: url(https://cdn.pixabay.com/photo/2024/06/14/12/15/developer-8829709_1280.jpg);
+    height: 100%;
+    background-size: cover;
+}
+.main{
+    display: flex;
+    position: absolute;
+    border: 5px inset rgb(0, 0, 0);
+    padding: 20px;
+    top: 75%;
+    left: 75%;
+    text-shadow: 2px 4px 3px rgb(168, 17, 195);
+}
+.main:hover{
+    scale: 0.9;
+}
+.pic{
+    display: flex;
+}
+.pic img{
+    width: 400px;
+}
+.pic h4{
+    color: brown;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+.pic p{
+    text-align: justify;
+    margin: 10px;
+}
+h3{
+    text-align: center;
+    color: darkblue;
+    margin-top: 5px;
+    background-color: aquamarine;
+}
+.gallery{
+    border: 5px ridge blueviolet;
+}
+.gallery img{
+    width: 450px;
+    margin: 5px;
+    padding: 5px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.gallery img:hover{
+    scale: 1.05;
+    box-shadow: 2px 4px 3px blueviolet;
+}
+.row{
+    background-color: gray;
+    display: flex;
+    margin-top: 5px;
+}
+.box{
+    width: 400px;
+    margin: 5px;
+    background-color: bisque;
+    height: 500px;
+    background: linear-gradient(to top,rgb(173, 49, 211) 50%,rgb(230, 225, 234)50%);
+    background-size: 100% 200%;
+    transition: all .5s;
+}
+.box:hover{
+    background-position: right bottom;
+}
+.box img{
+    width: 100%;
+}
+.box h5{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: brown;
+}
+.box p{
+    text-align: justify;
+    font-style: italic;
+    padding: 10px;
+}
+form{
+    width: 500px;
+    margin-left: 500px;
+}
+.input{
+    width: 100%;
+    margin: 10px;
+}
+button{
+    color: aliceblue;
+    background-color: black;
+    padding: 5px;
+    cursor: pointer;
+}
+.cv{
+    background-color: blueviolet;
+    color: azure;
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 10%;
+    margin-left: 60%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(134, 16, 181); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #991eb4; 
+}
